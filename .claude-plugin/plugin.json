@@ -19,5 +19,6 @@
     "time-tracking",
     "invoicing",
     "mcp"
-  ]
+  ],
+  "repository": "https://github.com/raidum/flopinio-plugin"
 }
