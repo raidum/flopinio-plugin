@@ -10,5 +10,14 @@
   },
   "homepage": "https://flopinio.com",
   "license": "MIT",
-  "privacyPolicyUrl": "https://flopinio.com/privacy"
+  "privacyPolicyUrl": "https://flopinio.com/privacy",
+  "keywords": [
+    "client-work",
+    "projects",
+    "requests",
+    "tasks",
+    "time-tracking",
+    "invoicing",
+    "mcp"
+  ]
 }
