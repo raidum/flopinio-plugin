@@ -9,5 +9,6 @@
     "url": "https://flopinio.com"
   },
   "homepage": "https://flopinio.com",
-  "license": "MIT"
+  "license": "MIT",
+  "privacyPolicyUrl": "https://flopinio.com/privacy"
 }

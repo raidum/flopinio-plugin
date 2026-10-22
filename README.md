@@ -49,9 +49,26 @@ Verify a scoped read, a harmless staged write, rejection of ungranted operations
 and reconnect/refresh behavior using a dedicated demo workspace. These are manual
 test instructions, not evidence that they have passed.
 
-Claude compatibility work is being prepared separately in the private Rails
-repository. It is not deployed by this package. Do not treat schema validation
-as proof that the deployed endpoint supports Claude's complete OAuth flow.
+Hosted Claude uses automatic OAuth client registration; Claude Code uses a
+loopback callback with S256 PKCE. Both connect to the same hosted endpoint.
+See the [connection guide](https://flopinio.com/docs/mcp) for setup,
+reconnection, scopes, approvals, and revoking access. Package validation checks
+structure; authenticated reads, staged writes, and token lifecycle behavior
+still need testing in the intended Claude client.
+
+## Data handling
+
+The package runs no local MCP server, install script, or hook. Tool requests
+and their arguments go to Flopinio's hosted service; permitted results return
+to the connected AI client. The package declares no other data destination
+and embeds no credentials. Flopinio retains service and approval records under
+its [privacy policy](https://flopinio.com/privacy). Data received by Claude is
+subject to [Anthropic's privacy policy](https://www.anthropic.com/legal/privacy)
+and the user's applicable account terms and settings.
+
+To revoke access, open Flopinio Settings > Integrations and revoke the relevant
+connection or token. Removing the plugin alone may leave credentials active;
+revoking access does not delete information already shared with the AI provider.
 
 ## Directory submission
 
