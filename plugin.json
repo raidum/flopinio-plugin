@@ -1,0 +1,51 @@
+{
+  "name": "app-69f781e661a48191aeec398bb44bb811",
+  "description": "Turn Flopinio workspace context into reviewable client-work actions from ChatGPT and Codex.",
+  "author": {
+    "name": "DUMRAIT S.R.L.",
+    "email": "support@flopinio.com",
+    "url": "https://flopinio.com"
+  },
+  "homepage": "https://flopinio.com/docs/mcp",
+  "keywords": [
+    "client-work",
+    "projects",
+    "requests",
+    "tasks",
+    "time-tracking",
+    "invoicing",
+    "mcp"
+  ],
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "version": "0.2.0",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Flopinio",
+        "shortDescription": "Client work, ready for action",
+        "longDescription": "Connect your own Flopinio account to search workspace context, review requests and delivery work, manage tasks and time, and stage approval-backed invoice and workspace actions.",
+        "developerName": "DUMRAIT S.R.L.",
+        "category": "Productivity",
+        "capabilities": [
+          "OAuth",
+          "Read",
+          "Write",
+          "Approvals"
+        ],
+        "websiteURL": "https://flopinio.com",
+        "privacyPolicyURL": "https://flopinio.com/privacy",
+        "termsOfServiceURL": "https://flopinio.com/terms",
+        "defaultPrompt": [
+          "Show the Flopinio work that needs my attention.",
+          "Find my open Flopinio tasks and suggest the next action.",
+          "Review unbilled work in Flopinio and prepare the next step."
+        ],
+        "brandColor": "#172033",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "supportURL": "https://flopinio.com/support"
+      }
+    }
+  },
+  "license": "MIT"
+}

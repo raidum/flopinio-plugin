@@ -1,0 +1,13 @@
+{
+  "name": "flopinio",
+  "displayName": "Flopinio",
+  "version": "0.2.0",
+  "description": "Find client-work context in Flopinio and manage requests, projects, tasks, notes, decisions, time, and invoices through scoped tools and approval-aware actions.",
+  "author": {
+    "name": "DUMRAIT S.R.L.",
+    "email": "support@flopinio.com",
+    "url": "https://flopinio.com"
+  },
+  "homepage": "https://flopinio.com",
+  "license": "MIT"
+}

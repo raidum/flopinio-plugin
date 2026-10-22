@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "flopinio": {
+      "type": "http",
+      "url": "https://flopinio.com/mcp"
+    }
+  }
+}
