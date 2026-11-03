@@ -1,7 +1,7 @@
 {
   "name": "flopinio",
   "displayName": "Flopinio",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Find client-work context in Flopinio and manage requests, projects, tasks, notes, decisions, time, and invoices through scoped tools and approval-aware actions.",
   "author": {
     "name": "DUMRAIT S.R.L.",
@@ -20,5 +20,6 @@
     "invoicing",
     "mcp"
   ],
-  "repository": "https://github.com/raidum/flopinio-plugin"
+  "repository": "https://github.com/raidum/flopinio-plugin",
+  "icon": "./assets/icon.png"
 }
