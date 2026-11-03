@@ -14,11 +14,21 @@ files. The hosted service remains subject to Flopinio's terms and account access
 
 - Claude: `.claude-plugin/plugin.json` and `.mcp.json`.
 - ChatGPT and Codex portable package: `plugin.json` and `mcp.json`.
-- Both formats share `skills/flopinio-workspace/SKILL.md` and version `0.2.0`.
+- Both formats share `skills/flopinio-workspace/SKILL.md` and version `0.2.1`.
 
 The OpenAI package name preserves the existing published plugin identity.
 Changes to this repository do not update any directory listing automatically
 until a release source and its publication process are configured.
+
+Tool descriptions, annotations, and input schemas come from the hosted MCP
+server at connection time. Server contract fixes require an application
+deployment; this package carries the shared workflow guidance and branding.
+
+Both packaged PNGs are exact copies of the current application's 512-by-512
+`public/icon.png`, derived from `app/assets/images/flopinio_logo_svg.svg`.
+The Claude manifest references `assets/icon.png`; the portable manifest
+references both PNGs. An icon uploaded separately for the MCP connector
+listing must be updated separately in the submission portal.
 
 ## Connect
 
